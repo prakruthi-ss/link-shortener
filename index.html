@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Link Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1><span>Enter your link to shorten</span></h1>
+            <div class="field">
+                <input type="text" id="url" placeholder="Paste your link" autocomplete="off">
+                <a onclick="shortenlink()" class="shorten link">shorten link</a>
+            </div>
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #190019; /* Dark background color */
+    --main-color: #fbe4d8; /* Coral color for vibrancy */
+    --text-color: #522b5b; /* White text color */
+    --font-family: 'Montserrat', sans-serif; /* Use Montserrat font for a modern feel */
+    --font-size-big: 3rem; /* Larger font size for the header */
+    --font-size-h2: 2.5rem; /* Slightly reduced font size for subheadings */
+    --font-size-p: 1.7rem; /* Standard font size for paragraphs */
+    --container-bg: rgba(0, 73, 37, 0.7); /* Background color for the text container */
+    --container-padding: 20px; /* Padding for the text container */
+    --button-bg: #ffffff; /* Lighter coral color for buttons */
+    --button-hover-bg: #854f6c; /* A darker coral for button hover effect */
+    --border-radius: 25px; /* Increase border-radius for a smoother look */
+}
+ 
+
+
+
+body {
+    background: var(--bg-color);
+    padding: 40px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Header styles */
+header a img {
+    margin-left: 40px;
+    width: 15rem;
+}
+
+/* Example: Make specific text elements coral for vibrancy */
+span.links {
+    color: var(--main-color);
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: var(--font-size-big);
+    color: var(--main-color);
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+}
+
+.container p {
+    font-size: var(--font-size-p);
+    color: #98d6dfec;
+    margin-top: 1rem;
+}
+
+
+/* Input field and button styles */
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.field input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: #F7F4E3;
+}
+
+.field input:focus {
+    border: 3px solid var(--main-color);
+}
+
+.field .shorten {
+    background: var(--button-bg);
+    width: 40%;
+    height: 50px;
+    border: none;
+    border-radius: var(--border-radius);
+    color: #49180e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.field .shorten:hover {
+    background: var(--button-hover-bg);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* Result section styles */
+#result {
+    margin-top: 10vh;
+    height: 20px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    text-align: center;
+}
+
+#result .active {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#result a {
+    color: #c1d0f5;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#result a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    color: #80e7c8;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.footer a {
+    font-size: 0.9rem;
+    color: var(--main-color);
+}
